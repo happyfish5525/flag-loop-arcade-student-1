@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<!-- htmlaunch:enhanced:v2 -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2264%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22hsl(113%2C72%25%2C58%25)%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22hsl(143%2C72%25%2C44%25)%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22url(%23g)%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2246%22%20text-anchor%3D%22middle%22%20font-family%3D%22ui-sans-serif%2Csystem-ui%2C-apple-system%2CSegoe%20UI%2Csans-serif%22%20font-size%3D%2238%22%20font-weight%3D%22800%22%20fill%3D%22%23ffffff%22%3EF%3C%2Ftext%3E%3C%2Fsvg%3E">
+<meta name="theme-color" content="#7b5c14">
+<meta name="description" content="Flag Loop Arcade - Student 1 | deployed with HTMLaunch">
+<link rel="canonical" href="https://happyfish5525.github.io/flag-loop-arcade-student-1/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Flag Loop Arcade - Student 1">
+<meta property="og:title" content="Flag Loop Arcade - Student 1">
+<meta property="og:description" content="Flag Loop Arcade - Student 1 | deployed with HTMLaunch">
+<meta property="og:url" content="https://happyfish5525.github.io/flag-loop-arcade-student-1/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fhappyfish5525.github.io%2Fflag-loop-arcade-student-1%2F?w=1200&h=630">
+<meta property="og:image:alt" content="Flag Loop Arcade - Student 1">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Flag Loop Arcade - Student 1">
+<meta name="twitter:description" content="Flag Loop Arcade - Student 1 | deployed with HTMLaunch">
+<meta name="twitter:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fhappyfish5525.github.io%2Fflag-loop-arcade-student-1%2F?w=1200&h=630">
+<meta name="twitter:image:alt" content="Flag Loop Arcade - Student 1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Flag Loop Arcade - Student 1</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#1d1d22;--mut:#6b6b76;--line:#dcd8cf;--acc:#5b4bdb;--ok:#1f9d55;--bad:#d64545;--code:#14141c;--codeink:#e8e8f0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15151b;--card:#1f1f28;--ink:#f0f0f5;--mut:#9a9aa8;--line:#34343f;--acc:#8b7dff;--code:#0c0c11}}
+:root[data-theme="dark"]{--bg:#15151b;--card:#1f1f28;--ink:#f0f0f5;--mut:#9a9aa8;--line:#34343f;--acc:#8b7dff;--code:#0c0c11}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;padding:14px;max-width:980px;margin:auto}
+h1{font-size:22px;margin:4px 0}h2{font-size:18px;margin:0 0 6px}
+.mut{color:var(--mut);font-size:14px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.chip{flex:1;min-width:130px;border:2px solid var(--line);background:var(--card);border-radius:12px;padding:8px 10px;display:flex;gap:6px;align-items:center}
+.chip.on{border-color:var(--c);box-shadow:0 0 0 3px color-mix(in srgb,var(--c) 25%,transparent)}
+.chip input{border:0;background:transparent;color:var(--ink);font:600 15px inherit;width:100%;min-width:0}
+.chip b{font-size:18px;color:var(--c)}
+button{font:600 14px inherit;border:0;border-radius:10px;padding:9px 14px;background:var(--acc);color:#fff;cursor:pointer}
+button.alt{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+button:disabled{opacity:.4}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.tabs button{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+.tabs button.on{background:var(--acc);color:#fff;border-color:var(--acc)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:8px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}}
+pre.code,.code{background:var(--code);color:var(--codeink);border-radius:10px;padding:10px 0;margin:0;font:13px/1.7 ui-monospace,Menlo,Consolas,monospace;overflow-x:auto}
+.code div{padding:0 12px;white-space:pre;border-left:3px solid transparent}
+.code .hl{background:rgba(255,214,10,.18);border-left-color:#ffd60a}
+.code .gone{text-decoration:line-through;opacity:.45}
+input.t{width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:15px inherit;margin:4px 0}
+.flag{display:flex;gap:10px;align-items:center;margin:6px 0 10px}
+.light{width:26px;height:26px;border-radius:50%;background:var(--bad);box-shadow:0 0 14px var(--bad);transition:.3s}
+.light.go{background:var(--ok);box-shadow:0 0 14px var(--ok)}
+.pill{font:600 14px ui-monospace,Menlo,monospace;padding:4px 10px;border-radius:8px;background:var(--code);color:var(--codeink)}
+.stage{perspective:700px;height:190px;display:flex;justify-content:center;align-items:center;margin:8px 0}
+.frame{position:relative;width:130px;height:180px;background:linear-gradient(#ffd86b,#ff9f5a);border-radius:6px 6px 0 0;display:flex;align-items:center;justify-content:center;font-size:48px}
+.door{position:absolute;inset:0;background:linear-gradient(#6a5acd,#3f33a8);border-radius:6px 6px 0 0;transform-origin:left center;transition:transform 1s;display:flex;align-items:center;justify-content:center;font-size:34px;border:3px solid #2a2275}
+.door.open{transform:rotateY(-105deg)}
+.msg{min-height:24px;font-weight:600;margin:6px 0}
+.ok{color:var(--ok)}.bad{color:var(--bad)}
+.opt{display:block;width:100%;text-align:left;margin:6px 0;background:var(--card);color:var(--ink);border:1px solid var(--line)}
+.opt.r{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 18%,var(--card))}
+.opt.w{border-color:var(--bad)}
+.pool button,.ans div{display:block;width:100%;text-align:left;font:13px ui-monospace,Menlo,Consolas,monospace;margin:4px 0}
+.pool button{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+.ans{min-height:60px;border:2px dashed var(--line);border-radius:10px;padding:8px}
+.ans div{background:var(--code);color:var(--codeink);padding:5px 8px;border-radius:6px;white-space:pre;margin:3px 0}
+@keyframes sh{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.shake{animation:sh .3s}
+#pen{position:fixed;inset:0;width:100%;height:100%;z-index:5;pointer-events:none;touch-action:none}
+#pen.on{pointer-events:auto;cursor:crosshair}
+.tools{position:fixed;right:10px;bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:9;display:flex;gap:6px}
+</style></head><body>
+<h1>🚦 Flag Loop Arcade</h1>
+<div class="mut">A flag is a True/False signal that tells a loop to keep going or stop. Take turns, earn points, have fun!</div>
+<div class="bar" id="players"></div>
+<div class="tabs" id="tabs"></div>
+<div id="view"></div>
+<canvas id="pen"></canvas>
+<div class="tools"><button id="penBtn" class="alt">✏️ Annotate</button><button id="clr" class="alt">🧽 Clear</button></div>
+
+<script>
+var COL=['#e5484d','#1f9d55','#3b82f6'],names=['Student 1','Student 2','Student 3'],score=[0,0,0],turn=0,tab=0,SOLO=0;turn=0;
+var $=function(s){return document.querySelector(s)};
+function players(){var h='';for(var i=0;i<3;i++){if(SOLO>=0&&i!=SOLO)continue;h+='<div class="chip'+(i==turn?' on':'')+'" style="--c:'+COL[i]+'"><span>'+(i==turn?'👉':'🙂')+'</span><input value="'+names[i]+'" data-i="'+i+'"><b>'+score[i]+'</b></div>'}
+$('#players').innerHTML=h;document.querySelectorAll('.chip input').forEach(function(e){e.onchange=function(){names[e.dataset.i]=e.value||'Student'}})}
+function award(n){score[turn]+=n;players()}
+function next(){if(SOLO>=0)return;turn=(turn+1)%3;players()}
+var TABS=['🚪 Bouncer','🐞 Bug Hunt','🧩 Build It'];
+function tabs(){$('#tabs').innerHTML=TABS.map(function(t,i){return '<button class="'+(i==tab?'on':'')+'" data-t="'+i+'">'+t+'</button>'}).join('');
+document.querySelectorAll('#tabs button').forEach(function(b){b.onclick=function(){tab=+b.dataset.t;tabs();[bouncer,bugs,build][tab]()}})}
+
+/* ---- 1. Bouncer ---- */
+var BC=['incorrect = True','while incorrect:','    pwd1 = input("Enter your password: ")','    pwd2 = input("Re-enter your password: ")','    if pwd1 == pwd2:','        print("Password matched!")','        incorrect = False','    else:','        print("Kindly Reset Your Password")'];
+function bouncer(){
+ var broken=false,tries=0,open=false;
+ $('#view').innerHTML='<div class="card"><h2>🚪 The Digital Bouncer</h2><div class="mut">type the same password twice to flip the flag and open the door.</div><div class="grid"><div>'+
+ '<div class="flag"><div class="light" id="lt"></div><span class="pill" id="fl">incorrect = True</span><span class="mut" id="tr">loops: 0</span></div>'+
+ '<div class="stage"><div class="frame">🎉<div class="door" id="dr">🔒</div></div></div></div><div>'+
+ '<div class="code" id="cd"></div>'+
+ '<input class="t" id="p1" placeholder="pwd1"><input class="t" id="p2" placeholder="pwd2">'+
+ '<div class="bar"><button id="go">Submit</button><label class="mut"><input type="checkbox" id="brk"> 🔧 Delete the flag line</label></div>'+
+ '<div class="msg" id="ms"></div></div></div></div>';
+ function paint(h){$('#cd').innerHTML=BC.map(function(l,i){var c=(i==h?'hl':'')+(broken&&i==6?' gone':'');return '<div class="'+c+'"></div>'}).join('');
+  document.querySelectorAll('#cd div').forEach(function(d,i){d.textContent=BC[i]})}
+ paint(-1);
+ $('#brk').onchange=function(){broken=this.checked;paint(-1);$('#ms').textContent=broken?'Now try matching passwords… will the door open?':''};
+ $('#go').onclick=function(){
+  if(open){open=false;tries=0;$('#dr').classList.remove('open');$('#dr').textContent='🔒';$('#lt').classList.remove('go');$('#fl').textContent='incorrect = True';$('#tr').textContent='loops: 0';$('#p1').value=$('#p2').value='';$('#go').textContent='Submit';$('#ms').textContent='';paint(-1);next();return}
+  tries++;$('#tr').textContent='loops: '+tries;
+  if($('#p1').value===$('#p2').value&&$('#p1').value!==''){
+   paint(5);
+   if(broken){$('#ms').className='msg bad';$('#ms').textContent='♾️ Infinite loop! Matched, but the flag is still True, so while incorrect: never stops.';return}
+   setTimeout(function(){paint(6)},500);
+   $('#fl').textContent='incorrect = False';$('#lt').classList.add('go');$('#dr').classList.add('open');$('#dr').textContent='🔓';
+   $('#ms').className='msg ok';$('#ms').textContent='✅ Flag flipped to False. Loop ends, door opens! +1 point';open=true;award(1);$('#go').textContent='Play again ➜'
+  }else{paint(8);$('#ms').className='msg bad';$('#ms').textContent='❌ No match. The flag stays True, so the loop asks again.'}
+ }}
+
+/* ---- 2. Bug Hunt ---- */
+var BUGS=[
+{c:'running = True\nwhile running:\n    cmd = input("Type quit: ")\n    if cmd == "quit":\n        print("Bye")',a:0,e:'Nothing ever sets running = False, so the loop never ends.'},
+{c:'done = "False"\nwhile done:\n    n = input("Type 7: ")\n    if n == "7":\n        done = False',a:1,e:'"False" in quotes is a non-empty string, so it counts as True. The flag must be a real Boolean.'},
+{c:'incorrect = True\nwhile incorrect:\n    incorrect = True\n    pwd = input("Password: ")\n    if pwd == "abc":\n        incorrect = False',a:2,e:'The flag is reset to True at the start of every loop, overriding the update.'}];
+var OPT=['Forgot to update the flag','String instead of Boolean','Re-initialised inside the loop'],bi=0;
+function bugs(){
+ var b=BUGS[bi%3],got=false;
+ $('#view').innerHTML='<div class="card"><h2>🐞 Bug Hunt ('+(bi%3+1)+'/3)</h2><div class="mut">this loop never stops. Which pitfall is it?</div><div class="grid"><pre class="code" id="bc"></pre><div id="op"></div></div><div class="msg" id="ms"></div><button id="nx" disabled>Next bug ➜</button></div>';
+ $('#bc').innerHTML=b.c.split('\n').map(function(){return '<div></div>'}).join('');
+ document.querySelectorAll('#bc div').forEach(function(d,i){d.textContent=b.c.split('\n')[i]});
+ $('#op').innerHTML=OPT.map(function(o,i){return '<button class="opt" data-i="'+i+'">'+o+'</button>'}).join('');
+ document.querySelectorAll('.opt').forEach(function(x){x.onclick=function(){if(got)return;var i=+x.dataset.i;
+  if(i==b.a){got=true;x.classList.add('r');$('#ms').className='msg ok';$('#ms').textContent='✅ '+b.e+' +1 point';award(1);$('#nx').disabled=false}
+  else{x.classList.add('w');$('#ms').className='msg bad';$('#ms').textContent='Not that one, try again!'}}});
+ $('#nx').onclick=function(){bi++;next();bugs()}}
+
+/* ---- 3. Build It ---- */
+var SRC=['incorrect = True','while incorrect:','    pwd1 = input("Enter: ")','    pwd2 = input("Again: ")','    if pwd1 == pwd2:','        incorrect = False','    else:','        print("Try again")'];
+function build(){
+ var k=0,ord=SRC.map(function(_,i){return i}).sort(function(){return Math.random()-.5});
+ $('#view').innerHTML='<div class="card"><h2>🧩 Build the Flag Loop</h2><div class="mut">tap the lines in the right order. Remember: initialise the flag first, then check it, then flip it.</div><div class="grid"><div class="pool" id="pl"></div><div class="ans" id="an"></div></div><div class="msg" id="ms"></div><button id="nx" disabled>New round ➜</button></div>';
+ $('#pl').innerHTML=ord.map(function(i){return '<button data-i="'+i+'"></button>'}).join('');
+ document.querySelectorAll('#pl button').forEach(function(b){b.textContent=SRC[b.dataset.i].replace(/^ +/,function(s){return s.replace(/ /g,'\u00a0')});
+  b.onclick=function(){var i=+b.dataset.i;
+   if(i==k){var d=document.createElement('div');d.textContent=SRC[i];$('#an').appendChild(d);b.style.visibility='hidden';k++;
+    if(k==SRC.length){$('#ms').className='msg ok';$('#ms').textContent='🎉 Perfect loop! +2 points';award(2);$('#nx').disabled=false}}
+   else{b.classList.remove('shake');void b.offsetWidth;b.classList.add('shake');$('#ms').className='msg bad';$('#ms').textContent='Not yet, what must happen next?'}}});
+ $('#nx').onclick=function(){next();build()}}
+
+/* ---- Annotation pen ---- */
+var cv=$('#pen'),cx=cv.getContext('2d'),on=false,dr=false;
+function rs(){cv.width=innerWidth;cv.height=innerHeight}rs();addEventListener('resize',rs);
+$('#penBtn').onclick=function(){on=!on;cv.classList.toggle('on',on);this.textContent=on?'✋ Stop drawing':'✏️ Annotate'};
+$('#clr').onclick=function(){cx.clearRect(0,0,cv.width,cv.height)};
+cv.onpointerdown=function(e){dr=true;cx.strokeStyle=COL[turn];cx.lineWidth=4;cx.lineCap='round';cx.beginPath();cx.moveTo(e.clientX,e.clientY);cv.setPointerCapture(e.pointerId)};
+cv.onpointermove=function(e){if(!dr)return;cx.lineTo(e.clientX,e.clientY);cx.stroke()};
+cv.onpointerup=function(){dr=false};
+players();tabs();bouncer();
+</script></body></html>
